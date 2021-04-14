@@ -2,8 +2,7 @@
     margin-top: 0;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 .add-posts{
     display: flex;
@@ -33,13 +32,10 @@
 .add-posts button:active{
     background-color: rgba(90, 72, 109, 0.533);
 }
-
 .list-group{
     list-style: none;
     padding-left: 0;
 }
-
-
 .item {
     opacity: 0.01;
     animation: showing 0.3s forwards ease-in 0.5s;
@@ -48,16 +44,11 @@
     
     margin: 10px auto;
     overflow-wrap: break-word;
-    
-
 }
 .items-list{
     
     margin: 30px 0 0 0;
-    text-align: left;
-
-  
-    
+    text-align: left;   
 }
 @keyframes showing{
     to{opacity:1;}

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './create-posts.css';
 
-
 class CreatePost extends Component{
   constructor(props){
     super(props);
@@ -9,12 +8,11 @@ class CreatePost extends Component{
     this.state = {
       content:'',
       posts: []
-    };
+  };
     
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handlePostCgange = this.handlePostCgange.bind(this);
     this.showPosts = this.showPosts.bind(this);
-
   }
 
   componentDidMount() {
@@ -24,7 +22,6 @@ class CreatePost extends Component{
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
-
 
   handlePostCgange(event){
     const content = event.target.value;
@@ -69,8 +66,8 @@ render(){
     </div>
   ));
 
-  return(
-      <div>
+return(
+     <div>
       <div className="add-posts">
         <textarea
           value = {this.state.content}
@@ -81,12 +78,9 @@ render(){
       <div className = "items-list">
         {items}
       </div>
-    </div>
-    
+    </div>   
   )
 }
 }
-
-
 
 export default CreatePost;

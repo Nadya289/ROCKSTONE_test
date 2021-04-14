@@ -7,13 +7,13 @@ export default () => {
       <Swiper
         spaceBetween={200}
         slidesPerView={1}
-        className="container"
-      >
+        className="container">
         <SwiperSlide>
             <CreatePost/>
         </SwiperSlide>
+        
         <SwiperSlide>
-        <TimePage/>
+            <TimePage/>
         </SwiperSlide>
         
       </Swiper>

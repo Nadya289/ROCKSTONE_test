@@ -1,7 +1,6 @@
 import React from 'react';
 import './time-page.css';
 
-
 class TimePage extends React.Component {
     constructor(props) {
       super(props);
